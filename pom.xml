@@ -131,10 +131,10 @@
                         </descriptorRefs>
                         <archive>
                             <manifest>
-                                <mainClass>com.xatkit.example.GreetingsBot</mainClass>
+                                <mainClass>com.xatkit.example.MyBot</mainClass>
                             </manifest>
                         </archive>
-                        <finalName>greetings-bot</finalName>
+                        <finalName>mybot</finalName>
                     </configuration>
                 </plugin>
 

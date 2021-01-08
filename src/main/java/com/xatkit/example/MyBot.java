@@ -21,7 +21,7 @@ import static com.xatkit.dsl.DSL.state;
  * You can check our <a href="https://github.com/xatkit-bot-platform/xatkit/wiki">wiki</a>
  * to learn more about bot creation, supported platforms, and advanced usage.
  */
-public class GreetingsBot {
+public class MyBot {
 
     /*
      * Your bot is a plain Java application: you need to define a main method to make the created jar executable.
@@ -155,7 +155,7 @@ public class GreetingsBot {
          * Note that every Xatkit bot needs a default fallback state.
          */
         val defaultFallback = fallbackState()
-                .body(context -> reactPlatform.reply(context, "Sorry, I didn't, get it"));
+                .body(context -> reactPlatform.reply(context, "Sorry amigo, I didn't, get it"));
 
         /*
          * Creates the bot model that will be executed by the Xatkit engine.
