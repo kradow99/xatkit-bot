@@ -42,7 +42,9 @@ public class MyBot {
             .trainingSentence("Hi")
             .trainingSentence("Hello")
             .trainingSentence("Good morning")
-            .trainingSentence("Good afternoon");
+            .trainingSentence("Good afternoon")
+            .trainingSentence("What's up");
+
 
         val howAreYou = intent("HowAreYou")
                 .trainingSentence("How are you?")
@@ -177,11 +179,17 @@ public class MyBot {
                 .defaultFallbackState(defaultFallback);
 
         Configuration botConfiguration = new BaseConfiguration();
+
         /*
          * Add configuration properties (e.g. authentication tokens, platform tuning, intent provider to use).
          * Check the corresponding platform's wiki page for further information on optional/mandatory parameters and
          * their values.
          */
+
+        botConfiguration.setProperty("xatkit.dialogflow.projectId", "mybot-fswx");
+        botConfiguration.setProperty("xatkit.dialogflow.credentials.path", "/home/marcos/Downloads/mybot-fswx-f4df98e7a442.json");
+        botConfiguration.setProperty("xatkit.dialogflow.language", "en-Us");
+        botConfiguration.setProperty("xatkit.dialogflow.clean_on_startup", true);
 
         XatkitBot xatkitBot = new XatkitBot(botModel, botConfiguration);
         xatkitBot.run();
