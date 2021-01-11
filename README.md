@@ -66,6 +66,12 @@ val search = intent("Search")
 ```
 Remember that you don't need to use these explicit sentences when talking to the bot. Dialogflow uses Machine Learning to infer the training sentence you are referring to!
 
+## Troubleshooting
+
+- IntelliJ error: `java: incompatible types: com.xatkit.dsl.intent.IntentOptionalTrainingSentenceStep cannot be converted to lombok.val` ➡ You need to enable annotation processing in your project (see image below).
+![Enable annotation processing in IntelliJ](docs/img/enable_annotation_processing_intellij.png)
+
+
 # Website
 
 [xatkit.com](https://xatkit.com/)
