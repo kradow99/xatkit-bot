@@ -14,8 +14,8 @@ import java.security.GeneralSecurityException;
 
 public class YoutubeAPI {
 
-    private static final String DEVELOPER_KEY = "AIzaSyBD-A8s4hiv5Cl354GTy2udmANO2sAwFxE";
-    private static final String APPLICATION_NAME = "youtube-bot";
+    private static final String DEVELOPER_KEY = "YOUR API KEY";
+    private static final String APPLICATION_NAME = "YOUR APP NAME";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
 
     /**

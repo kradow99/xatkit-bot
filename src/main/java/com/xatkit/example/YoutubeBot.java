@@ -195,8 +195,8 @@ public class YoutubeBot {
          * Check the corresponding platform's wiki page for further information on optional/mandatory parameters and
          * their values.
          */
-        botConfiguration.setProperty("xatkit.dialogflow.projectId", "youtube-bot-brxn");
-        botConfiguration.setProperty("xatkit.dialogflow.credentials.path", "/home/marcos/Downloads/youtube-bot-brxn-96e49a2a1a12.json");
+        botConfiguration.setProperty("xatkit.dialogflow.projectId", "YOUR PROJECT ID");
+        botConfiguration.setProperty("xatkit.dialogflow.credentials.path", "PATH TO YOUR DIALOGFLOW CREDENTIALS");
         botConfiguration.setProperty("xatkit.dialogflow.language", "en-Us");
         botConfiguration.setProperty("xatkit.dialogflow.clean_on_startup", true);
         //botConfiguration.setProperty("xatkit.server.port", 5000);
